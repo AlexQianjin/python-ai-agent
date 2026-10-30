@@ -12,5 +12,8 @@ uv run python-ai-agent "Analyze AAPL's business and key risks"
 
 Without an argument, the agent asks for a request interactively.
 The response streams to the terminal as the model generates text.
-The `web_search` tool is registered as a placeholder; it retrieves no data
-until a search provider is implemented.
+The `web_search` tool fetches https://data.10jqka.com.cn/market/longhu/
+and extracts the 个股明细 market summaries for 深市、沪市、科创板, excluding
+京市 and negative gains. Results use percentage strings, for example
+`[{"stock_name": "冰山冷热", "stock_up": "10.03%"}]`. Zero gains are retained.
+The source shows its latest published trading data; this is not a general web search.
