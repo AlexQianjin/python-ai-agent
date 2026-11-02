@@ -10,3 +10,8 @@ wheels/
 .venv
 
 .env
+
+data/
+
+# Local Notion OAuth credentials
+.notion-oauth/

@@ -5,10 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "langchain>=1.0,<2",
+    "langchain[mcp]>=1.4,<2",
     "langchain-openai>=1.0,<2",
     "openai-agents>=0.22.2",
     "python-dotenv>=1.2.1",
+    "fastmcp>=4.1.5",
+    "py-key-value-aio[disk]>=0.4.6",
+    "cryptography>=50.0.1",
 ]
 
 [project.scripts]
